@@ -8,9 +8,9 @@
 - curl
 - pgrep
 
-sudo apt update
-sudo apt install curl
-sudo apt install procps
+- sudo apt update
+- sudo apt install curl
+- sudo apt install procps
 
 
 # Запуск скрипта
@@ -33,5 +33,5 @@ sudo systemctl disable --now monitoring.timer
 sudo systemctl status --now monitoring.timer
 
 # Если что то поменяли в monitoring.service или monitoring.timer
-sudo systemctl daemon-reload
-sudo systemctl restart monitoring.timer
+- sudo systemctl daemon-reload
+- sudo systemctl restart monitoring.timer
