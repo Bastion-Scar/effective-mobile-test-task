@@ -14,6 +14,10 @@ sudo apt install procps
 
 
 # Запуск скрипта
+0. Перейдите в папку со скриптом (начинаем с 0, верно? хехе)
+
+cd effective-mobile-test-task 
+
 1. Получите права на выполнение скрипта:
    
 sudo chmod 755 ./deploy.sh
