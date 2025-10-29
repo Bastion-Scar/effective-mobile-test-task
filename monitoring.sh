@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -euo pipefail
 # Нужные переменные
 PROCESS_NAME="test"
 URL="https://test.com/monitoring/test/api"
