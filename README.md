@@ -8,25 +8,31 @@
 - curl
 - pgrep
 
-sudo apt update
-sudo apt install curl
-sudo apt install procps
+- sudo apt update
+- sudo apt install curl
+- sudo apt install procps
 
 
 # Запуск скрипта
-0. Перейдите в папку со скриптом (начинаем с 0, верно? хехе)
 
-cd effective-mobile-test-task 
+0. Клонируйте проект (начинаем с 0, верно? хехе)
 
-1. Получите права на выполнение скрипта:
+git clone https://github.com/Bastion-Scar/effective-mobile-test-task
+
+1. Перейдите в папку со скриптом
+
+cd effective-mobile-test-task
+
+2. Получите права на выполнение скрипта:
+>>>>>>> b780be048e4a8d7712f3a386b4f9e5ae5833b75c
    
 sudo chmod 755 ./deploy.sh
 
-2. Разверните скрипт:
+3. Разверните скрипт:
 
 sudo ./deploy.sh
 
-3. Дайте программе поработать и проверьте результаты:
+4. Дайте программе поработать и проверьте результаты:
 
 sudo cat /var/log/monitoring.log
 
@@ -37,5 +43,5 @@ sudo systemctl disable --now monitoring.timer
 sudo systemctl status --now monitoring.timer
 
 # Если что то поменяли в monitoring.service или monitoring.timer
-sudo systemctl daemon-reload
-sudo systemctl restart monitoring.timer
+- sudo systemctl daemon-reload
+- sudo systemctl restart monitoring.timer
